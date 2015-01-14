@@ -23,7 +23,7 @@ setup(
     ],
     include_package_data=True,
     install_requires=[
-        'Django==1.7.2',
+        'Django==1.7.3',
     ],
     zip_safe=False,
     scripts=['conferencio/manage.py'],
