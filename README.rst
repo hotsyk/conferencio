@@ -8,7 +8,7 @@ Open source conference management system
         :target: http://conferencio.readthedocs.org/en/latest/
 
 .. image:: https://travis-ci.org/hotsyk/conferencio.svg
-        :target: https://travis-ci.org/hotsyk/conferencio.png?branch=master
+        :target: https://travis-ci.org/hotsyk/conferencio
 
 
 
