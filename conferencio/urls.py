@@ -29,5 +29,8 @@ urlpatterns = patterns('',
     url(r'^avatar/', include('avatar.urls')),
 
     # Your stuff: custom urls go here
+    url(r'^api-auth/', include('rest_framework.urls',
+                               namespace='rest_framework')),
+    url(r'^events/', include("event.urls", namespace="events")),
 
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
