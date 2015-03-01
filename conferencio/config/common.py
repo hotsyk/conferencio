@@ -31,7 +31,7 @@ class Common(Configuration):
         'django.contrib.staticfiles',
 
         # Useful template tags:
-        # 'django.contrib.humanize',
+        'django.contrib.humanize',
 
         # Admin
         'django.contrib.admin',
@@ -46,6 +46,7 @@ class Common(Configuration):
 
     # Apps specific for this project go here.
     LOCAL_APPS = (
+        'event',
         'users',  # custom users app
         # Your stuff: custom apps go here
     )

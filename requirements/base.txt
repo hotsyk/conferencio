@@ -1,8 +1,8 @@
 # Bleeding edge Django
-django==1.7.3
+django==1.7.5
 
 # Configuration
-django-configurations==0.8
+#django-configurations==0.8
 django-secure==1.0.1
 django-cache-url==0.8.0
 dj-database-url==0.3.0
@@ -36,3 +36,6 @@ django-avatar==2.0
 pytz==2014.10
 
 # Your custom requirements go here
+djorm-ext-pgfulltext
+-e git+https://github.com/jezdez/django-configurations.git#egg=django-configuration
+-e hg+https://bitbucket.org/schinckel/django-postgres#egg=django-postgres

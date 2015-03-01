@@ -7,9 +7,16 @@ from django.db import models
 
 from django.utils.translation import ugettext_lazy as _
 
+from postgres.fields import json_field
 
-# Subclass AbstractUser
+
 class User(AbstractUser):
+
+    context = json_field.JSONField(default={})
+    action_history = json_field.JSONField(default={})
+
+    date_of_birth = models.DateField(
+        _('date of birth of user'), null=True)
 
     def __unicode__(self):
         return self.username
