@@ -20,7 +20,7 @@ Pillow==2.7.0
 
 # For user registration, either via email or social
 # Well-built with regular release cycles!
-django-allauth==0.19.0
+django-allauth==0.19.1
 
 # For the persistence stores
 psycopg2==2.5.4
@@ -37,7 +37,7 @@ pytz==2014.10
 
 # Your custom requirements go here
 djorm-ext-pgfulltext==0.10
-djangorestframework==3.0.5
+djangorestframework==3.1.0
 markdown==2.6
 #-e git+https://github.com/jezdez/django-configurations.git#egg=django-configuration
 -e hg+https://bitbucket.org/schinckel/django-postgres#egg=django-postgres
