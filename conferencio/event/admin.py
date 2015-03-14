@@ -9,7 +9,12 @@ from .models import (
 )
 
 
-admin.site.register(Event)
+@admin.register(Event)
+class EventAdmin(admin.ModelAdmin):
+    date_hierarchy = 'ts_start'
+
+
+
 admin.site.register(EventCity)
 admin.site.register(EventCountry)
 admin.site.register(EventKind)

@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import datetime
+
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
@@ -55,6 +57,9 @@ class Event(models.Model):
     city = models.ForeignKey(EventCity, blank=True, null=True)
     context = json_field.JSONField(default={})
     kind = models.ForeignKey(EventKind)
+    ts_create = models.DateTimeField(default=datetime.datetime.now)
+    ts_start = models.DateTimeField(null=True)
+    ts_end = models.DateTimeField(null=True)
     registered_users = models.ManyToManyField(
         User,
         related_name='event_registrants')
