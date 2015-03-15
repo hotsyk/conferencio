@@ -62,3 +62,8 @@ dist: clean
 	python setup.py sdist
 	python setup.py bdist_wheel
 	ls -l dist
+
+install:
+	pip install -r requirements.txt
+	pip install -r requirements/local.txt
+	pip install -r requirements/test.txt
