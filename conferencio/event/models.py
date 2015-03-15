@@ -17,7 +17,8 @@ class EventSeries(models.Model):
     admin = models.ForeignKey(User, related_name='eventseries_owner')
     domain = models.CharField(_('domain of site'), max_length=1024)
     title = models.CharField(_('title of event series'), max_length=255)
-    users = models.ManyToManyField(User, related_name='eventseries_moderator')
+    moderators = models.ManyToManyField(User,
+                                        related_name='eventseries_moderator')
 
     def __unicode__(self):
         return self.title

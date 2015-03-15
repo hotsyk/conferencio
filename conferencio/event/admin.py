@@ -14,8 +14,21 @@ class EventAdmin(admin.ModelAdmin):
     date_hierarchy = 'ts_start'
 
 
+@admin.register(EventCity)
+class EventCityAdmin(admin.ModelAdmin):
+    pass
 
-admin.site.register(EventCity)
-admin.site.register(EventCountry)
-admin.site.register(EventKind)
-admin.site.register(EventSeries)
+
+@admin.register(EventCountry)
+class EventCountryAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(EventKind)
+class EventKindAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(EventSeries)
+class EventSeriesAdmin(admin.ModelAdmin):
+    pass
