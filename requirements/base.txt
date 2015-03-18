@@ -36,8 +36,9 @@ django-avatar==2.0
 pytz==2014.10
 
 # Your custom requirements go here
-djorm-ext-pgfulltext==0.10
+django-pipeline==1.4.7
 djangorestframework==3.1.0
+djorm-ext-pgfulltext==0.10
+futures==2.2.0
 markdown==2.6.1
-#-e git+https://github.com/jezdez/django-configurations.git#egg=django-configuration
 -e hg+https://bitbucket.org/schinckel/django-postgres#egg=django-postgres
