@@ -42,3 +42,6 @@ djorm-ext-pgfulltext==0.10
 futures==2.2.0
 markdown==2.6.1
 -e hg+https://bitbucket.org/schinckel/django-postgres#egg=django-postgres
+
+-e git+https://github.com/markfinger/django-node.git#egg=django-node
+-e git+https://github.com/markfinger/django-react.git#egg=django-react
