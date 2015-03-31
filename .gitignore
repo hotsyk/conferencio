@@ -33,3 +33,4 @@ node_modules/
 
 venv
 _build
+conferencio.egg-info
