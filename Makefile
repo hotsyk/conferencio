@@ -35,7 +35,7 @@ lint:
 	flake8 conferencio tests
 
 test:
-	python conferencio/manage.py test event speaker
+	python conferencio/manage.py test
 
 test-all:
 	tox
