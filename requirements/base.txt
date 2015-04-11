@@ -2,8 +2,8 @@
 django==1.8
 
 # Configuration
-django-configurations
-#-e git+https://github.com/jezdez/django-configurations.git#egg=django-configurations
+# django-configurations
+-e git+https://github.com/jezdez/django-configurations.git#egg=django-configurations
 django-secure==1.0.1
 django-cache-url==0.8.0
 dj-database-url==0.3.0
@@ -34,12 +34,12 @@ django-autoslug==1.7.2
 django-avatar==2.0
 
 # Time zones support
-pytz==2014.10
+pytz==2015.2
 
 # venv
 pip==6.1.1
 setuptools==15.0
-virtualenv==12.1.0
+virtualenv==12.1.1
 pep8==1.6.2
 
 # Your custom requirements go here

@@ -1,6 +1,6 @@
 # Test dependencies go here.
 -r base.txt
 coverage==3.7.1
-hypothesis==1.1.0
+hypothesis==1.1.1
 flake8==2.4.0
 factory-boy==2.5.1
