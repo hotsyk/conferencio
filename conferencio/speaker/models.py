@@ -31,3 +31,16 @@ class EventTalks(models.Model):
 
     def __unicode__(self):
         return self.title
+
+
+class Proposal(models.Model):
+    """
+    Store proposals for talks given for events
+    """
+    event = models.ForeignKey(Event)
+    proposer = models.ForeignKey(User)
+    title = models.CharField(_('Title of the talk'), max_length=1024)
+    data = json_field.JSONField(default={})
+
+    def __unicode__(self):
+        return self.title
